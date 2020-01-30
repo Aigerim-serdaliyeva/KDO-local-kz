@@ -1,0 +1,25 @@
+.bg-white-57 {
+    background: rgba(255, 255, 255, 0.57);
+}
+
+.object-fit-polyfill {
+    object-fit: cover;
+    object-position: center;
+    font-family: 'object-fit: cover; object-position: center;';
+}
+
+.vue-notification {
+    font-size: 14px !important;
+}
+
+.shadow {
+  box-shadow: 0px 4px 71px rgba(0, 0, 0, 0.1);
+}
+
+.label {
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+

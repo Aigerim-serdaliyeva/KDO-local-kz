@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Интеграция с 1C",
+    "checked": false
+  },
+  {
+    "title": "Обратный звонок",
+    "checked": false
+  },
+  {
+    "title": "Чат с оператором",
+    "checked": false
+  },
+  {
+    "title": "Платежный шлюз",
+    "checked": false
+  },
+  {
+    "title": "Соц. сети",
+    "checked": false
+  },
+  {
+    "title": "SIP телефония",
+    "checked": false
+  },
+  {
+    "title": "SEO",
+    "checked": false
+  },
+  {
+    "title": "Админка",
+    "checked": false
+  },
+  {
+    "title": "CRM",
+    "checked": false
+  },
+  {
+    "title": "Интеграция с Месенджерами",
+    "checked": false
+  },
+  {
+    "title": "Карты",
+    "checked": false
+  },
+  {
+    "title": "Видео плеер",
+    "checked": false
+  },
+  {
+    "title": "Мобильная версия ПМП",
+    "checked": false
+  },
+  {
+    "title": "Таргетинг и Контекстная реклама",
+    "checked": false
+  },
+  {
+    "title": "QR код",
+    "checked": false
+  }
+]

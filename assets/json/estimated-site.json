@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Сайт-визитка",
+    "checked": false
+  },
+  {
+    "title": "Сайт-портфолио",
+    "checked": false
+  },
+  {
+    "title": "Лендинг",
+    "checked": false
+  },
+  {
+    "title": "Корпоративный сайт",
+    "checked": false
+  },
+  {
+    "title": "Интернет-магазин",
+    "checked": false
+  },
+  {
+    "title": "Информационный портал",
+    "checked": false
+  },
+  {
+    "title": "Блог",
+    "checked": false
+  }
+]

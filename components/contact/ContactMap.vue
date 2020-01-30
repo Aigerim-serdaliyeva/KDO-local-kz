@@ -1,0 +1,10 @@
+<template>
+    <div>
+        <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A2dc4b5decfe803833b5506708dd1ec36bbdb87bc23a7e1c7bf6969e64d7809b0&amp;source=constructor"
+            width="100%"
+            height="600"
+            frameborder="0"
+        ></iframe>
+    </div>
+</template>
