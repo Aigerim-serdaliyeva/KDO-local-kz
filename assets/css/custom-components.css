@@ -34,12 +34,24 @@
   @apply h-screen flex flex-col items-center justify-center bg-form-back w-full max-w-890px mx-auto
 }
 
-.label {
-  @apply w-full border border-solid border-input-color bg-white text-dark-gray text-14px py-12px px-14px flex items-center mb-15px
+.label-border {
+  @apply w-full border border-solid border-input-color bg-white text-dark-gray text-14px py-12px px-14px flex items-center
 }
 
-.label-input {
-  @apply mr-5px border border-solid border-input-color bg-white text-dark-gray w-15px h-15px
+.label {
+  @apply w-full text-dark-gray text-14px flex items-center
+}
+
+.checkbox {
+  @apply relative mr-8px border border-solid border-input-color bg-white text-dark-gray w-15px h-15px
+}
+
+.checkbox-block {
+  @apply block mb-15px w-full
+}
+
+.checkbox-inline-block {
+  @apply mr-15px mb-15px
 }
 
 .input {

@@ -1,26 +1,26 @@
 [
   {
     "title": "Размещение сайта в интернете",
-    "checked": false
+    "id": "placementSite"
   },
   {
     "title": "Наполнение сайта информацией",
-    "checked": false
+    "id": "fillingSite"
   },
   {
     "title": "Поддержка сайта",
-    "checked": false
+    "id": "supportSite"
   },
   {
     "title": "Иллюстрации/сложные графические объекты/коллажи",
-    "checked": false
+    "id": "complexCollages"
   },
   {
     "title": "Создание рекламных баннеров",
-    "checked": false
+    "id": "creationBanners"
   },
   {
     "title": "Пиктограммы и иконки",
-    "checked": false
+    "id": "pictogramsIcons"
   }
 ]

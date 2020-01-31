@@ -1,62 +1,73 @@
 [
   {
     "title": "Интеграция с 1C",
-    "checked": false
+    "id": "integration"
   },
   {
     "title": "Обратный звонок",
-    "checked": false
+    "id": "callback"
   },
   {
     "title": "Чат с оператором",
-    "checked": false
+    "id": "chatOperator"
   },
   {
     "title": "Платежный шлюз",
-    "checked": false
+    "id": "paymentGateway"
   },
   {
     "title": "Соц. сети",
-    "checked": false
+    "id": "socialNetwork"
+
   },
   {
     "title": "SIP телефония",
-    "checked": false
+    "id": "sip"
+
   },
   {
     "title": "SEO",
-    "checked": false
+    "id": "seo"
+
   },
   {
     "title": "Админка",
-    "checked": false
+    "id": "admin"
+
   },
   {
     "title": "CRM",
-    "checked": false
+    "id": "crm"
+
   },
   {
     "title": "Интеграция с Месенджерами",
-    "checked": false
+    "id": "integrationMessenger"
+
   },
   {
     "title": "Карты",
-    "checked": false
+    "id": "maps"
+
   },
   {
     "title": "Видео плеер",
-    "checked": false
+    "id": "videoplayer"
+
   },
   {
     "title": "Мобильная версия ПМП",
-    "checked": false
+    "id": "mobilePmp"
+
   },
   {
     "title": "Таргетинг и Контекстная реклама",
-    "checked": false
+    "id": "targetingAdds"
+
   },
   {
     "title": "QR код",
-    "checked": false
+    "id": "qrcode"
+
   }
 ]

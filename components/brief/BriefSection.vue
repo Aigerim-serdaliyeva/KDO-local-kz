@@ -77,51 +77,21 @@
 
                 <BriefTitle brief-title="ВЕБ-САЙТ" />
                 <BriefBlock>
-                    <div class="flex items-center flex-wrap mb-25px">
-                        <InputTitle
-                            input-title="Предполагаемый тип сайта"
-                            input-title-span="*"
-                        />
-                        <div
-                            v-for="(site, index) in estimatedSites"
-                            :key="`site-${index}`"
-                            class="mr-15px mb-15px"
-                        >
-                            <label class="label">
-                                <input
-                                    v-model="site.checked"
-                                    type="checkbox"
-                                    :name="`estimatedSite-${index + 1}`"
-                                    :value="true"
-                                    class="label-input"
-                                />
-                                {{ site.title }}
-                            </label>
-                        </div>
-                    </div>
+                    <CustomInput
+                        input-title="Предполагаемый тип сайта"
+                        input-title-span="*"
+                        :v-model-variable="'estimatedSites'"
+                        :checkbox-list="estimatedSites"
+                        :template-type="'radio'"
+                    />
 
-                    <div class="flex items-center flex-wrap mb-25px">
-                        <InputTitle
-                            input-title="Задачи сайта"
-                            input-title-span="*"
-                        />
-                        <div
-                            v-for="(task, index) in tasksSite"
-                            :key="`task-${index}`"
-                            class="mr-15px mb-15px"
-                        >
-                            <label class="label">
-                                <input
-                                    v-model="task.checked"
-                                    type="checkbox"
-                                    :name="`taskSite-${index + 1}`"
-                                    :value="true"
-                                    class="label-input"
-                                />
-                                {{ task.title }}
-                            </label>
-                        </div>
-                    </div>
+                    <CustomInput
+                        input-title="Задачи сайта"
+                        input-title-span="*"
+                        :v-model-variable="'tasksSite'"
+                        :checkbox-list="tasksSite"
+                        :template-type="'checkbox'"
+                    />
 
                     <CustomInput
                         class="w-full"
@@ -149,29 +119,23 @@
 
                 <BriefTitle brief-title="Дизайн и материалы" />
                 <BriefBlock>
-                    <div class="flex items-center flex-wrap mb-25px">
-                        <InputTitle
-                            input-title="Настроение и ассоциации, которые должен вызывать
+                    <CustomInput
+                        input-title="Настроение и ассоциации, которые должен вызывать
                             дизайн"
-                            input-title-span="*"
-                        />
-                        <div
-                            v-for="(material, index) in designMaterials"
-                            :key="`material-${index}`"
-                            class="mr-15px mb-15px"
-                        >
-                            <label class="label">
-                                <input
-                                    v-model="material.checked"
-                                    type="checkbox"
-                                    :name="`material-${index + 1}`"
-                                    :value="true"
-                                    class="label-input"
-                                />
-                                {{ material.title }}
-                            </label>
-                        </div>
-                    </div>
+                        input-title-span="*"
+                        :v-model-variable="'designMaterials'"
+                        :checkbox-list="designMaterials"
+                        :template-type="'radio'"
+                    />
+
+                    <CustomInput
+                        input-title="Внешний вид сайта"
+                        input-title-span="*"
+                        :v-model-variable="'siteAppearance'"
+                        :checkbox-list="siteAppearance"
+                        :template-type="'checkbox'"
+                        :is-checkbox-border="false"
+                    />
 
                     <CustomInput
                         class="w-full"
@@ -179,6 +143,28 @@
                         input-title="Наличие / расположение блоков на главной странице (какие блоки должны быть виднее всего)"
                         :v-model-variable="'visibleMenu'"
                     />
+
+                    <div class="flex flex-wrap">
+                        <CustomInput
+                            input-title="Дизайн"
+                            :v-model-variable="'designStage'"
+                            :checkbox-list="designStage"
+                            :template-type="'checkbox'"
+                            :is-checkbox-border="false"
+                            :is-blockdiv-checkbox="true"
+                            class="w-6/12"
+                        />
+
+                        <CustomInput
+                            input-title="Фирменный стиль"
+                            :v-model-variable="'brandStyle'"
+                            :checkbox-list="brandStyle"
+                            :template-type="'checkbox'"
+                            :is-checkbox-border="false"
+                            :is-blockdiv-checkbox="true"
+                            class="w-6/12"
+                        />
+                    </div>
                 </BriefBlock>
 
                 <BriefTitle brief-title="комплексные задачи" />
@@ -187,21 +173,11 @@
                         input-title="Дополнительные решения для проекта"
                         input-title-span="*"
                     />
-                    <div
-                        v-for="(solution, index) in solutionsProject"
-                        :key="`task-${index}`"
-                    >
-                        <label class="label">
-                            <input
-                                v-model="solution.checked"
-                                type="checkbox"
-                                name="selected"
-                                :value="true"
-                                class="label-input"
-                            />
-                            {{ solution.title }}
-                        </label>
-                    </div>
+                    <CustomInput
+                        :v-model-variable="'additionalSolutions'"
+                        :checkbox-list="additionalSolutions"
+                        :template-type="'checkbox'"
+                    />
                 </BriefBlock>
 
                 <BriefTitle brief-title="Файлы и примеры" />
@@ -214,27 +190,12 @@
                         :v-model-variable="'exampleSite'"
                     />
 
-                    <div class="flex items-center flex-wrap mb-25px">
-                        <InputTitle
-                            input-title="Дальнейшее развитие и дополнительные услуги"
-                        />
-                        <div
-                            v-for="(service, index) in additionalServices"
-                            :key="`service-${index}`"
-                            class="mr-15px mb-15px"
-                        >
-                            <label class="label">
-                                <input
-                                    v-model="service.checked"
-                                    type="checkbox"
-                                    :name="`material-${index + 1}`"
-                                    :value="true"
-                                    class="label-input"
-                                />
-                                {{ service.title }}
-                            </label>
-                        </div>
-                    </div>
+                    <CustomInput
+                        input-title="Дальнейшее развитие и дополнительные услуги"
+                        :v-model-variable="'additionalServices'"
+                        :checkbox-list="additionalServices"
+                        :template-type="'checkbox'"
+                    />
 
                     <CustomInput
                         class="w-full"
@@ -269,11 +230,14 @@ export default {
     },
     data() {
         return {
-            solutionsProject: require('../../assets/json/solutions-project.json'),
+            additionalSolutions: require('../../assets/json/additional-solutions.json'),
             estimatedSites: require('../../assets/json/estimated-site.json'),
             tasksSite: require('../../assets/json/tasks-site.json'),
             designMaterials: require('../../assets/json/design-materials.json'),
-            additionalServices: require('../../assets/json/additional-services.json')
+            additionalServices: require('../../assets/json/additional-services.json'),
+            siteAppearance: require('../../assets/json/site-appearance.json'),
+            designStage: require('../../assets/json/design-stage.json'),
+            brandStyle: require('../../assets/json/brand-style.json')
         };
     }
 };

@@ -1,22 +1,22 @@
 [
   {
     "title": "Строгий корпоративный дизайн",
-    "checked": false
+    "id": "strictDesign"
   },
   {
     "title": "Яркий, броский дизайн",
-    "checked": false
+    "id": "brightDesign"
   },
   {
     "title": "Позитивный и веселый",
-    "checked": false
+    "id": "positiveDesign"
   },
   {
     "title": "Дизайн насыщенный иллюстрациями/фотографиями",
-    "checked": false
+    "id": "photographsDesign"
   },
   {
     "title": "Минималистичный дизайн. Упор на функциональность",
-    "checked": false
+    "id": "minimalisticDesign"
   }
 ]

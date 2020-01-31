@@ -1,7 +1,7 @@
 <template>
     <div class="container mb-30px">
         <div
-            class="brief-header max-w-1170px mx-auto py-30px px-45px text-14px"
+            class="brief-header flex justify-between max-w-1170px mx-auto pt-30px pb-10px px-45px text-14px"
         >
             <div class="max-w-620px">
                 <div class="mb-20px">
@@ -23,6 +23,9 @@
                         >info@kazdevops.kz</a
                     >
                 </div>
+            </div>
+            <div>
+                <img src="../../assets/img/computers-light.png" alt="" />
             </div>
         </div>
         <div></div>

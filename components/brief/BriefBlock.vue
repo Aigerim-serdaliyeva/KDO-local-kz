@@ -3,7 +3,7 @@
         <div
             class="w-full flex flex-wrap justify-between mx-auto max-w-1170px pt-20px pb-15px"
         >
-            <slot></slot>
+            <slot />
         </div>
         <div
             class="w-full mx-auto max-w-1250px border-b-2 border-solid border-gray-colorful"

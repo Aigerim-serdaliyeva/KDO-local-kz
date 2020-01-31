@@ -1,26 +1,26 @@
 [
   {
     "title": "Сформировать бренд",
-    "checked": false
+    "id": "formBrand"
   },
   {
     "title": "Сформировать сообщество",
-    "checked": false
+    "id": "formCommunity"
   },
   {
     "title": "Донести информацию",
-    "checked": false
+    "id": "conveyInformation"
   },
   {
     "title": "Получить информацию",
-    "checked": false
+    "id": "getInformation"
   },
   {
     "title": "Продать товар/услугу",
-    "checked": false
+    "id": "sellProductService"
   },
   {
     "title": "Оптимизировать работу с партнерами",
-    "checked": false
+    "id": "optimizeWork"
   }
 ]

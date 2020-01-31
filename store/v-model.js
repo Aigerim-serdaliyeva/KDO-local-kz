@@ -1,5 +1,16 @@
 const SET_VAL = 'SET_VAL';
 
+const checkboxes = {
+    additionalSolutions: [],
+    estimatedSites: [],
+    designMaterials: [],
+    tasksSite: [],
+    additionalServices: [],
+    siteAppearance: [],
+    designStage: [],
+    brandStyle: []
+};
+
 export const state = () => ({
     fullName: '',
     email: '',
@@ -16,7 +27,8 @@ export const state = () => ({
     mainRequirements: '',
     visibleMenu: '',
     exampleSite: '',
-    yourWishes: ''
+    yourWishes: '',
+    ...checkboxes
 });
 
 export const mutations = {

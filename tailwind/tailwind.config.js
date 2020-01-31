@@ -16,21 +16,24 @@ module.exports = {
             center: true,
             padding: '15px'
         },
-        opacity: {
-            '30': '.3'
-        },
-        lineHeight: {
-            '87%': '87%'
-        },
-        inset: {
-            '17px': '17px',
-            '22px': '22px',
-            '50px': '50px',
-            '1/1': '100%',
-            '1/2': '50%',
-            '1/3': '33,33%'
-        },
+
         extend: {
+            opacity: {
+                '30': '.3'
+            },
+            lineHeight: {
+                '87%': '87%'
+            },
+            inset: {
+                '2px': '2px',
+                '5px': '5px',
+                '17px': '17px',
+                '22px': '22px',
+                '50px': '50px',
+                '1/1': '100%',
+                '1/2': '50%',
+                '1/3': '33,33%'
+            },
             borderRadius: {
                 '1/2': '50%',
                 '32px': '32px'
