@@ -35,15 +35,15 @@
 }
 
 .label-border {
-  @apply w-full border border-solid border-input-color bg-white text-dark-gray text-14px py-12px px-14px flex items-center
+  @apply w-full border border-solid border-input-color bg-white text-dark-gray text-14px py-12px px-14px flex items-center text-gray-text
 }
 
 .label {
-  @apply w-full text-dark-gray text-14px flex items-center
+  @apply w-full text-dark-gray text-14px flex items-center text-gray-text
 }
 
 .checkbox {
-  @apply relative mr-8px border border-solid border-input-color bg-white text-dark-gray w-15px h-15px
+  @apply relative mr-7px border border-solid border-input-color bg-white text-dark-gray w-15px h-15px
 }
 
 .checkbox-block {
@@ -52,6 +52,10 @@
 
 .checkbox-inline-block {
   @apply mr-15px mb-15px
+}
+
+.attach {
+  @apply flex items-center max-w-160px w-full cursor-pointer text-gray-text text-18px border border-solid border-input-color bg-white p-15px ml-10px
 }
 
 .input {

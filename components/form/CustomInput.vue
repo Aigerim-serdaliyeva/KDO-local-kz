@@ -168,4 +168,10 @@ export default {
     left: -1px;
     opacity: 0;
 }
+
+.checkbox-inline-block {
+    &:last-child {
+        margin: 0;
+    }
+}
 </style>
