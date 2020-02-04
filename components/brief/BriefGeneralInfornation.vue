@@ -1,6 +1,6 @@
 <template>
     <div>
-        <BriefTitle brief-title="Общая информация" />
+        <BriefTitle id="brief-title-general" brief-title="Общая информация" />
         <BriefBlock>
             <CustomInput
                 class="w-9/20"

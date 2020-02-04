@@ -1,34 +1,30 @@
 <template>
-    <div class="h-full fixed inset-0 max-w-350px w-full">
-        <div
-            class="clear-form cursor-pointer opacity-50 absolute right-30px text-center max-w-150px w-full"
-            @click="showModal"
+    <div class="clear-form" @click="showModal">
+        <svg
+            width="37"
+            height="50"
+            viewBox="0 0 37 50"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="mx-auto"
         >
-            <svg
-                width="37"
-                height="50"
-                viewBox="0 0 37 50"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="mx-auto"
-            >
-                <path
-                    d="M4.62686 15.8069H16.1898V4.51484H32.3767V45.1641H4.62686V15.8069ZM11.5637 5.45141V11.2888H5.57276L11.5637 5.45141ZM0 49.6791H37V0H10.6144L0 10.3555V49.6791Z"
-                    fill="#CAE0EF"
-                />
-                <path
-                    d="M23.1874 22.6791L18.9888 26.5794L14.7931 22.6791L12 25.2798L16.1981 29.1775L12 33.0778L14.7931 35.6791L18.9888 31.7788L23.1874 35.6791L26 33.0778L21.7824 29.1775L26 25.2798L23.1874 22.6791Z"
-                    fill="#CAE0EF"
-                    class="path-x"
-                />
-            </svg>
-            <div class="mt-10px">Очистить форму</div>
-        </div>
+            <path
+                d="M4.62686 15.8069H16.1898V4.51484H32.3767V45.1641H4.62686V15.8069ZM11.5637 5.45141V11.2888H5.57276L11.5637 5.45141ZM0 49.6791H37V0H10.6144L0 10.3555V49.6791Z"
+                fill="#CAE0EF"
+            />
+            <path
+                d="M23.1874 22.6791L18.9888 26.5794L14.7931 22.6791L12 25.2798L16.1981 29.1775L12 33.0778L14.7931 35.6791L18.9888 31.7788L23.1874 35.6791L26 33.0778L21.7824 29.1775L26 25.2798L23.1874 22.6791Z"
+                fill="#CAE0EF"
+                class="path-x"
+            />
+        </svg>
+        <div class="mt-10px">Очистить форму</div>
     </div>
 </template>
 
 <script>
 import { mapMutations } from 'vuex';
+
 export default {
     methods: {
         ...mapMutations({
@@ -40,9 +36,16 @@ export default {
 
 <style lang="scss" scoped>
 .clear-form {
+    position: fixed;
     top: 50%;
+    left: calc(50% - 745px);
     transform: translateY(-50%);
     transition: all 0.5s ease;
+    display: none;
+
+    &.active {
+        display: block;
+    }
 
     &:hover {
         opacity: 1;

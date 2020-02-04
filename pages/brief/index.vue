@@ -9,6 +9,19 @@
 import BriefSection from '../../components/brief/BriefSection.vue';
 import BriefHeader from '../../components/brief/BriefHeader.vue';
 export default {
-    components: { BriefHeader, BriefSection }
+    components: { BriefHeader, BriefSection },
+    mounted() {
+        const scene = this.$scrollmagic
+            .scene({
+                offset: 0,
+                triggerElement: '#brief-title-general'
+            })
+            .setClassToggle('.clear-form', 'active');
+
+        this.$scrollmagic.addScene(scene);
+    },
+    destroyed() {
+        this.$scrollmagic.destroy();
+    }
 };
 </script>
