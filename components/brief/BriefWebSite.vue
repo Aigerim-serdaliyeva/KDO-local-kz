@@ -8,6 +8,7 @@
                 :v-model-variable="'estimatedSites'"
                 :checkbox-list="estimatedSites"
                 :template-type="'radio'"
+                :rules="'required'"
             />
 
             <CustomInput
@@ -16,6 +17,7 @@
                 :v-model-variable="'tasksSite'"
                 :checkbox-list="tasksSite"
                 :template-type="'checkbox'"
+                :rules="'required'"
             />
 
             <CustomInput
@@ -23,22 +25,27 @@
                 input-title="Предпологаемое название сайта"
                 input-title-span="*"
                 :v-model-variable="'estimatedSiteName'"
+                :rules="'required'"
             />
+
             <CustomInput
                 class="w-full"
                 template-type="textarea"
                 input-title="Предполагаемые пункты меню"
                 input-title-span="*"
-                input-title-larify="Через запятую. Пример: О нас, Контакты и т.д."
+                input-title-clarify="Через запятую. Пример: О нас, Контакты и т.д."
                 :v-model-variable="'estimatedMenu'"
+                :rules="'required'"
             />
+
             <CustomInput
                 class="w-full"
                 template-type="textarea"
                 input-title="Основные требования и пожеланию по функционалу сайта"
                 input-title-span="*"
-                input-title-larify="Укажите все, что, с Вашей точки зрения, может уточнить задачу по разработке сайта."
+                input-title-clarify="Укажите все, что, с Вашей точки зрения, может уточнить задачу по разработке сайта."
                 :v-model-variable="'mainRequirements'"
+                :rules="'required'"
             />
         </BriefBlock>
     </div>

@@ -1,5 +1,5 @@
 import { extend } from "vee-validate";
-import { required, alpha, numeric, email } from "vee-validate/dist/rules";
+import { required, alpha, numeric, email, min } from "vee-validate/dist/rules";
 
 extend("required", {
   ...required,
@@ -8,15 +8,20 @@ extend("required", {
 
 extend("alpha", {
   ...alpha,
-  message: "This field must only contain alphabetic characters"
+  message: "Это поле должно содержать только буквенные символы"
 });
 
 extend("numeric", {
   ...numeric,
-  message: ''
-})
+  message: 'Это поле должно состоять только из чисел.'
+});
 
 extend("email", {
   ...email,
   message: 'Адрес электронной почты должен содержать символ "@"'
+});
+
+extend("min", {
+  ...min,
+  message: 'Длина проверяемого поля должна быть не меньше указанной длины.'
 });

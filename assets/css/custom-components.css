@@ -71,7 +71,7 @@
 }
 
 .input-required {
-  @apply text-12px text-center block text-red-500
+  @apply text-12px block text-red-500 pl-10px
 }
 
 .section-right {

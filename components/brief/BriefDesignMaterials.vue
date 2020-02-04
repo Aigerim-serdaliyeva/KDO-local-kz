@@ -9,6 +9,7 @@
                 :v-model-variable="'designMaterials'"
                 :checkbox-list="designMaterials"
                 :template-type="'radio'"
+                :rules="'required'"
             />
 
             <CustomInput
@@ -18,6 +19,7 @@
                 :checkbox-list="siteAppearance"
                 :template-type="'checkbox'"
                 :is-checkbox-border="false"
+                :rules="'required'"
             />
 
             <CustomInput

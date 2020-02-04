@@ -43,6 +43,7 @@ module.exports = {
             colors: {
                 'dark-gray': '#5D5D5D',
                 'blue-back': '#4D97C8',
+                '#CAE0EF': '#CAE0EF',
                 'header-back': '#F9FBFD',
                 'client-back': '#F9FBFD',
                 'input-color': '#CECECE',
@@ -98,6 +99,7 @@ module.exports = {
                 '165px': '165px',
                 '145px': '145px',
                 '100px': '100px',
+                '90px': '90px',
                 '87px': '87px',
                 '80px': '80px',
                 '70px': '70px',
@@ -186,7 +188,8 @@ module.exports = {
                 '150px': '150px',
                 '144px': '144px',
                 '140px': '140px',
-                '100px': '100px'
+                '100px': '100px',
+                '90px': '90px'
             },
             screens: {
                 '2xl': '1360px',

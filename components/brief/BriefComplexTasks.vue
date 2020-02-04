@@ -8,6 +8,7 @@
                 :v-model-variable="'additionalSolutions'"
                 :checkbox-list="additionalSolutions"
                 :template-type="'checkbox'"
+                :rules="'required'"
             />
         </BriefBlock>
     </div>

@@ -5,27 +5,41 @@
             }}<span class="text-color-red">{{ inputTitleSpan }}</span>
             <span class="font-light">{{ inputTitleBracket }}</span>
             <span class="text-14px italic font-normal ml-15px">
-                {{ inputTitleLarify }}
+                {{ inputTitleClarify }}
             </span>
         </div>
-        <ValidationProvider v-if="templateType === 'input'" :rules="rules">
+
+        <ValidationProvider
+            v-if="templateType === 'input'"
+            v-slot="{ errors }"
+            :rules="rules"
+        >
             <input
                 v-model="message"
                 class="input"
                 :type="inputType"
                 v-bind="inputOthersProps"
             />
+            <span class="input-required">{{ errors[0] }}</span>
         </ValidationProvider>
-        <ValidationProvider v-if="templateType === 'textarea'" :rules="rules">
+
+        <ValidationProvider
+            v-if="templateType === 'textarea'"
+            v-slot="{ errors }"
+            :rules="rules"
+        >
             <textarea
                 v-model="message"
                 class="input"
                 v-bind="textareaOtherProps"
                 rows="4"
             ></textarea>
+            <span class="input-required">{{ errors[0] }}</span>
         </ValidationProvider>
+
         <ValidationProvider
             v-if="templateType === 'checkbox' || 'radio'"
+            v-slot="{ errors }"
             :rules="rules"
         >
             <div class="flex flex-wrap">
@@ -51,6 +65,7 @@
                     </label>
                 </div>
             </div>
+            <span class="input-required">{{ errors[0] }}</span>
         </ValidationProvider>
     </div>
 </template>
@@ -58,11 +73,19 @@
 <script>
 import { ValidationProvider } from 'vee-validate';
 import { mapActions } from 'vuex';
+import { VueMaskDirective } from 'v-mask';
 export default {
     components: {
         ValidationProvider
     },
+    directives: {
+        mask: VueMaskDirective
+    },
     props: {
+        vMask: {
+            type: String,
+            default: '8(###)-###-##-##'
+        },
         isCheckboxBorder: {
             type: Boolean,
             default: true
@@ -93,7 +116,7 @@ export default {
         },
         rules: {
             type: String,
-            default: 'required'
+            default: ''
         },
         inputTitle: {
             type: String
@@ -104,7 +127,7 @@ export default {
         inputTitleBracket: {
             type: String
         },
-        inputTitleLarify: {
+        inputTitleClarify: {
             type: String
         },
         checkboxList: {
@@ -171,7 +194,7 @@ export default {
 
 .checkbox-inline-block {
     &:last-child {
-        margin: 0;
+        // margin: 0;
     }
 }
 </style>

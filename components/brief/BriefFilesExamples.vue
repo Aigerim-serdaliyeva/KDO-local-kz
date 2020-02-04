@@ -8,6 +8,7 @@
                 input-title="Примеры удачных сайтов, цветов, расположения элементов (не менее 2-х)"
                 input-title-span="*"
                 :v-model-variable="'exampleSite'"
+                :rules="'required'"
             />
 
             <ToAttach />

@@ -20,11 +20,13 @@
                 </div>
             </form>
         </ValidationObserver>
+        <TheNavigation />
     </div>
 </template>
 
 <script>
 import { ValidationObserver } from 'vee-validate';
+import TheNavigation from '../TheNavigation.vue';
 import ClearForm from '../form/ClearForm.vue';
 import BriefComplexTasks from './BriefComplexTasks.vue';
 import BriefFilesExamples from './BriefFilesExamples.vue';
@@ -41,7 +43,8 @@ export default {
         BriefDesignMaterials,
         BriefFilesExamples,
         BriefComplexTasks,
-        ClearForm
+        ClearForm,
+        TheNavigation
     }
 };
 </script>

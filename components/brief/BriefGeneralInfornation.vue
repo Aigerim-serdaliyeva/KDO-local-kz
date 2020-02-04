@@ -7,12 +7,14 @@
                 input-title="Название компании"
                 input-title-span="*"
                 :v-model-variable="'companyName'"
+                :rules="'required'"
             />
             <CustomInput
                 class="w-9/20"
                 input-title="Сфера деятельности"
                 input-title-span="*"
                 :v-model-variable="'companySphere'"
+                :rules="'required'"
             />
             <CustomInput
                 class="w-full"
@@ -33,6 +35,7 @@
                 input-title="Основные группы продукции и/или услуг"
                 input-title-span="*"
                 :v-model-variable="'companyMainGroup'"
+                :rules="'required'"
             />
             <CustomInput
                 class="w-9/20"

@@ -17,11 +17,14 @@
                 </div>
                 <div class="mb-20px">
                     Если для вас удобнее заполнить бриф в виде документа, можете
-                    <a href="" class="text-blue-back underline">скачать бриф</a>
-                    в формате .doc и прислать к нам на почту:
-                    <a href="info@kazdevops.kz" class="font-bold"
-                        >info@kazdevops.kz</a
+                    <a
+                        href="./Пример брифа.docx"
+                        class="text-blue-back underline"
+                        download
+                        >скачать бриф</a
                     >
+                    в формате .doc и прислать к нам на почту:
+                    <span class="font-bold">info@kazdevops.kz</span>
                 </div>
             </div>
             <div>

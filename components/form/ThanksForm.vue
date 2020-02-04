@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="z-50">
         <ModalForm
             title="Благодарим за сотруднечество!"
             text="Ваша заявка принята, как только мы рассмотрим её, мы обязательно свяжемся с вами!"
@@ -12,15 +12,21 @@
                 />
             </template>
             <template v-slot:btn>
-                <button class="button-clear">ОК</button>
+                <button class="button-clear" @click="hideModal">ОК</button>
             </template>
         </ModalForm>
     </div>
 </template>
 
 <script>
-import ModalForm from '../modal/ModalForm.vue';
+import { mapMutations } from 'vuex';
+import ModalForm from './ModalForm.vue';
 export default {
-    components: { ModalForm }
+    components: { ModalForm },
+    methods: {
+        ...mapMutations({
+            hideModal: 'modal/hideModal'
+        })
+    }
 };
 </script>

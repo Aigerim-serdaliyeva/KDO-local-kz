@@ -1,14 +1,51 @@
 [
-  "client-1",
-  "client-2",
-  "client-3",
-  "client-4",
-  "client-5",
-  "client-6",
-  "client-7",
-  "client-8",
-  "client-9",
-  "client-10",
-  "client-11",
-  "client-12"
+  {
+    "img": "client-1",
+    "href": "https://muratov.kz/"
+  },
+  {
+    "img": "client-2",
+    "href": ""
+  },
+  {
+    "img": "client-3",
+    "href": "https://profrem.kz/"
+  },
+  {
+    "img": "client-4",
+    "href": ""
+  },
+  {
+    "img": "client-5",
+    "href": ""
+  },
+  {
+    "img": "client-6",
+    "href": ""
+  },
+  {
+    "img": "client-7",
+    "href": ""
+  },
+  {
+    "img": "client-8",
+    "href": ""
+  },
+  {
+    "img": "client-9",
+    "href": ""
+  },
+  {
+    "img": "client-10",
+    "href": ""
+  },
+  {
+    "img": "client-11",
+    "href": ""
+  },
+  {
+    "img": "client-12",
+    "href": "http://pmginvest.com/"
+  }
+
 ]
