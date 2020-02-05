@@ -1,7 +1,7 @@
 <template>
     <div class="container mb-50px">
         <div
-            class="w-full flex flex-wrap justify-between mx-auto pt-20px pb-15px max-w-980px 2xl:max-w-1000px 3xl:max-w-1170px"
+            class="w-full flex flex-wrap justify-between mx-auto pt-20px pb-15px max-w-960px 2xl:max-w-1000px 3xl:max-w-1170px"
         >
             <slot />
         </div>

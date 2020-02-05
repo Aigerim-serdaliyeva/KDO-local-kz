@@ -3,10 +3,11 @@
         <HeaderMobile class="sm:hidden" />
         <Header class="hidden sm:block" />
         <nuxt />
-        <ModalWindow v-if="modalVisible">
+        <ModalWindow v-if="modalVisible && modalComponent">
             <template v-slot:modal>
+                <component :is="modalComponent"></component>
                 <!-- <ModalClearForm v-if="modalWindow === clearForm" /> -->
-                <ModalClearForm />
+                <!-- <ModalClearForm /> -->
                 <!-- <ThanksForm v-if="modalWindow === thanksForm" /> -->
             </template>
         </ModalWindow>
@@ -45,6 +46,7 @@ export default {
     computed: {
         ...mapState({
             modalVisible: ({ modal }) => modal.modalVisible,
+            modalComponent: ({ modal }) => modal.modalComponent,
             formTitle: ({ modal }) => modal.formTitle
         })
     },

@@ -1,5 +1,8 @@
 <template>
-    <div class="clear-form hidden fixed cursor-pointer" @click="showModal">
+    <div
+        class="clear-form hidden fixed cursor-pointer"
+        @click="showModal('ModalClearForm')"
+    >
         <svg
             width="37"
             height="50"
@@ -63,7 +66,7 @@ export default {
 
 @media screen and (max-width: 1360px) {
     .clear-form {
-        left: calc(50% - 620px);
+        left: calc(50% - 600px);
     }
 }
 </style>

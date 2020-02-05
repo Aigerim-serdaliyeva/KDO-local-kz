@@ -16,11 +16,7 @@
                 <BriefFilesExamples />
 
                 <div class="max-w-1170px w-full mx-auto text-right">
-                    <button
-                        type="submit"
-                        class="button-brief"
-                        @click="showModal"
-                    >
+                    <button type="submit" class="button-brief">
                         Завершить и отправить
                     </button>
                 </div>
@@ -57,7 +53,8 @@ export default {
                     return;
                 }
 
-                alert('Form has been submitted!');
+                this.showModal('ThanksForm');
+                // alert('Form has been submitted!');
 
                 // Wait until the models are updated in the UI
                 this.$nextTick(() => {

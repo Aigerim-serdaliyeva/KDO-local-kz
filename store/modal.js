@@ -4,8 +4,9 @@ export const state = () => ({
 });
 
 export const mutations = {
-    showModal(state) {
+    showModal(state, modalComponent) {
         state.modalVisible = true;
+        state.modalComponent = modalComponent;
     },
     hideModal(state) {
         state.modalVisible = false;
