@@ -1,5 +1,5 @@
 <template>
-    <div class="clear-form" @click="showModal">
+    <div class="clear-form hidden fixed cursor-pointer" @click="showModal">
         <svg
             width="37"
             height="50"
@@ -18,7 +18,9 @@
                 class="path-x"
             />
         </svg>
-        <div class="mt-10px">Очистить форму</div>
+        <div class="text-gray-text text-14px 2xl:text-16px mt-10px">
+            Очистить форму
+        </div>
     </div>
 </template>
 
@@ -36,12 +38,10 @@ export default {
 
 <style lang="scss" scoped>
 .clear-form {
-    position: fixed;
     top: 50%;
-    left: calc(50% - 745px);
+    left: calc(50% - 755px);
     transform: translateY(-50%);
     transition: all 0.5s ease;
-    display: none;
 
     &.active {
         display: block;
@@ -52,6 +52,18 @@ export default {
         .path-x {
             fill: #ff3f3f;
         }
+    }
+}
+
+@media screen and (max-width: 1490px) {
+    .clear-form {
+        left: calc(50% - 670px);
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    .clear-form {
+        left: calc(50% - 620px);
     }
 }
 </style>

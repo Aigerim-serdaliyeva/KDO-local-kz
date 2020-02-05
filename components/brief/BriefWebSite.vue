@@ -1,6 +1,6 @@
 <template>
     <div>
-        <BriefTitle brief-title="ВЕБ-САЙТ" />
+        <BriefTitle id="brief-title-website" brief-title="ВЕБ-САЙТ" />
         <BriefBlock>
             <CustomInput
                 input-title="Предполагаемый тип сайта"

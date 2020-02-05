@@ -18,13 +18,13 @@
                 :rules="'required|email'"
             />
             <CustomInput
-                :v-mask="vMask"
+                :v-mask="'8(###)-###-##-##'"
                 class="w-9/20"
                 input-title="Телефон"
                 input-title-span="*"
                 input-type="tel"
                 :v-model-variable="'phone'"
-                :rules="'required'"
+                :rules="'required|numeric|min:11'"
             />
             <CustomInput
                 class="w-9/20"

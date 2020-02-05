@@ -1,11 +1,11 @@
 <template>
     <div class="container">
         <h2
-            class="brief__title relative text-center font-extrabold text-36px uppercase"
+            class="brief__title relative text-center font-extrabold text-32px 2xl:text-36px uppercase"
         >
             <span class="px-15px">{{ briefTitle }}</span>
             <div
-                class="brief__title__before absolute w-full mx-auto max-w-1250px border border-solid border-gray-colorful"
+                class="brief__title__before absolute w-full mx-auto max-w-1000px 2xl:max-w-1070px 3xl:max-w-1250px border border-solid border-gray-colorful"
             ></div>
         </h2>
     </div>

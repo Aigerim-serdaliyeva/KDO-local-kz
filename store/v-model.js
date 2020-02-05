@@ -11,7 +11,7 @@ const checkboxes = {
     brandStyle: []
 };
 
-export const state = () => ({
+const inputs = {
     fullName: '',
     email: '',
     phone: null,
@@ -27,7 +27,12 @@ export const state = () => ({
     mainRequirements: '',
     visibleMenu: '',
     exampleSite: '',
-    yourWishes: '',
+    yourWishes: ''
+};
+
+export const state = () => ({
+    switcher: true,
+    ...inputs,
     ...checkboxes
 });
 
@@ -43,5 +48,17 @@ export const actions = {
     setVal({ commit }, payload) {
         commit(SET_VAL, payload);
         // commit(SET_VAL, { '123123123', 'email' });
+    },
+    clearAllValues({ commit }) {
+        const inputsArr = Object.keys(inputs);
+        const checkboxesArr = Object.keys(checkboxes);
+
+        inputsArr.forEach((key) => {
+            commit(SET_VAL, { val: null, variable: key });
+        });
+
+        checkboxesArr.forEach((key) => {
+            commit(SET_VAL, { val: [], variable: key });
+        });
     }
 };

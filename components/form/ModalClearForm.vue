@@ -11,7 +11,9 @@
                 />
             </template>
             <template v-slot:btn>
-                <button class="button-clear mr-50px">Очистить</button>
+                <button class="button-clear mr-50px" @click="clearForm">
+                    Очистить
+                </button>
                 <button class="button-clear" @click="hideModal">Отмена</button>
             </template>
         </ModalForm>
@@ -19,14 +21,21 @@
 </template>
 
 <script>
-import { mapMutations } from 'vuex';
+import { mapMutations, mapActions } from 'vuex';
 import ModalForm from './ModalForm.vue';
 export default {
     components: { ModalForm },
     methods: {
         ...mapMutations({
             hideModal: 'modal/hideModal'
-        })
+        }),
+        ...mapActions({
+            clearAllValues: 'v-model/clearAllValues'
+        }),
+        clearForm() {
+            this.clearAllValues();
+            this.hideModal();
+        }
     }
 };
 </script>

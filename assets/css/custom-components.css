@@ -15,7 +15,7 @@
 }
 
 .button-change {
-  @apply flex items-center justify-center py-5px h-50% w-45px
+  @apply flex items-center justify-center cursor-pointer py-5px h-50% w-45px
 }
 
 .button-round {

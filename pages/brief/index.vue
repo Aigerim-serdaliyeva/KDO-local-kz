@@ -14,7 +14,8 @@ export default {
         const scene = this.$scrollmagic
             .scene({
                 offset: 0,
-                triggerElement: '#brief-title-general'
+                triggerElement: '#brief-header',
+                triggerHook: 'onLeave'
             })
             .setClassToggle('.clear-form', 'active');
 

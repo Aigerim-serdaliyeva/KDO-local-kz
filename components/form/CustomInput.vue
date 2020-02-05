@@ -18,6 +18,7 @@
                 v-model="message"
                 class="input"
                 :type="inputType"
+                :vMask="vMask"
                 v-bind="inputOthersProps"
             />
             <span class="input-required">{{ errors[0] }}</span>
@@ -38,7 +39,7 @@
         </ValidationProvider>
 
         <ValidationProvider
-            v-if="templateType === 'checkbox' || 'radio'"
+            v-if="templateType === 'checkbox' || templateType === 'radio'"
             v-slot="{ errors }"
             :rules="rules"
         >
@@ -83,8 +84,7 @@ export default {
     },
     props: {
         vMask: {
-            type: String,
-            default: '8(###)-###-##-##'
+            type: String
         },
         isCheckboxBorder: {
             type: Boolean,

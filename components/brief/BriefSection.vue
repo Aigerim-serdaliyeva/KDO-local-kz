@@ -1,11 +1,11 @@
 <template>
     <div>
         <ClearForm />
-        <ValidationObserver>
-            <form>
+        <ValidationObserver ref="form">
+            <form @submit.prevent="handleSubmit()">
                 <BriefContactData />
 
-                <BriefGeneralInfornation />
+                <BriefCommonInfornation />
 
                 <BriefWebSite />
 
@@ -16,35 +16,58 @@
                 <BriefFilesExamples />
 
                 <div class="max-w-1170px w-full mx-auto text-right">
-                    <button class="button-brief">Завершить и отправить</button>
+                    <button
+                        type="submit"
+                        class="button-brief"
+                        @click="showModal"
+                    >
+                        Завершить и отправить
+                    </button>
                 </div>
             </form>
         </ValidationObserver>
-        <TheNavigation />
     </div>
 </template>
 
 <script>
 import { ValidationObserver } from 'vee-validate';
-import TheNavigation from '../TheNavigation.vue';
+import { mapMutations } from 'vuex';
 import ClearForm from '../form/ClearForm.vue';
 import BriefComplexTasks from './BriefComplexTasks.vue';
 import BriefFilesExamples from './BriefFilesExamples.vue';
 import BriefDesignMaterials from './BriefDesignMaterials.vue';
 import BriefWebSite from './BriefWebSite.vue';
-import BriefGeneralInfornation from './BriefGeneralInfornation.vue';
+import BriefCommonInfornation from './BriefCommonInfornation.vue';
 import BriefContactData from './BriefContactData.vue';
 export default {
     components: {
         ValidationObserver,
         BriefContactData,
-        BriefGeneralInfornation,
+        BriefCommonInfornation,
         BriefWebSite,
         BriefDesignMaterials,
         BriefFilesExamples,
         BriefComplexTasks,
-        ClearForm,
-        TheNavigation
+        ClearForm
+    },
+    methods: {
+        handleSubmit() {
+            this.$refs.form.validate().then((success) => {
+                if (!success) {
+                    return;
+                }
+
+                alert('Form has been submitted!');
+
+                // Wait until the models are updated in the UI
+                this.$nextTick(() => {
+                    this.$refs.form.reset();
+                });
+            });
+        },
+        ...mapMutations({
+            showModal: 'modal/showModal'
+        })
     }
 };
 </script>
