@@ -1,9 +1,13 @@
 <template>
-    <div class="header bg-header-back z-10 w-full py-5px sm:py-0 fixed">
+    <div class="header dark-header bg-#F9FBFD z-10 w-full py-5px sm:py-0 fixed">
         <div class="container">
             <div class="mx-auto flex items-center sm:justify-between">
                 <nuxt-link to="/">
-                    <img src="@/assets/img/logo.svg" alt="" />
+                    <img src="@/assets/img/logo.svg" class="dark-img-none" />
+                    <img
+                        src="@/assets/img/logo-dark.svg"
+                        class="dark-img hidden"
+                    />
                 </nuxt-link>
                 <MainMenu class="hidden sm:block ml-145px" />
                 <div class="flex-grow"></div>

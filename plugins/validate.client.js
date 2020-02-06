@@ -1,5 +1,5 @@
 import { extend } from "vee-validate";
-import { required, alpha, numeric, email, min } from "vee-validate/dist/rules";
+import { required, alpha, numeric, email, min, max } from "vee-validate/dist/rules";
 
 extend("required", {
   ...required,
@@ -24,4 +24,9 @@ extend("email", {
 extend("min", {
   ...min,
   message: 'Длина проверяемого поля должна быть не меньше указанной длины.'
+});
+
+extend("max", {
+  ...max,
+  message: 'Длина проверяемого поля не может превышать указанную длину.'
 });

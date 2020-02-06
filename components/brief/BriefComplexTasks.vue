@@ -1,6 +1,6 @@
 <template>
     <div>
-        <BriefTitle brief-title="комплексные задачи" />
+        <BriefBlockTitle brief-block-title="комплексные задачи" />
         <BriefBlock>
             <CustomInput
                 input-title="Дополнительные решения для проекта"
@@ -17,9 +17,9 @@
 <script>
 import CustomInput from '../form/CustomInput.vue';
 import BriefBlock from './BriefBlock.vue';
-import BriefTitle from './BriefTitle.vue';
+import BriefBlockTitle from './BriefBlockTitle.vue';
 export default {
-    components: { BriefTitle, BriefBlock, CustomInput },
+    components: { BriefBlockTitle, BriefBlock, CustomInput },
     data() {
         return {
             additionalSolutions: require('../../assets/json/additional-solutions.json')

@@ -1,10 +1,10 @@
 <template>
     <ValidationProvider>
         <div class="mb-25px">
-            <h2 class="input-title">
+            <h2 class="input-title dark-color">
                 Файлы
                 <span
-                    class="italic font-normal text-gray-text text-14px ml-15px"
+                    class="italic font-normal text-gray-text text-14px ml-15px dark-color"
                     >Конкретные графические изображения, брэндбук (просьба
                     заранее проверять актуальность прекрепляемого
                     материала).</span
@@ -26,7 +26,7 @@
                     :key="`attachments-${index}`"
                     class="mb-15px mr-15px"
                 >
-                    <div class="flex items-center">
+                    <div class="flex items-center dark-color">
                         <img src="../../assets/img/attached-file.svg" />
                         <p class="mx-5px">{{ item.name }}</p>
                         <img
@@ -38,11 +38,15 @@
                 </article>
             </div>
 
-            <label for="attachment-files" class="attach"
+            <label for="attachment-files" class="attach dark-color"
                 >Прикрепить
                 <img
                     src="../../assets/img/attach-file.svg"
-                    class="ml-10px inline "
+                    class="ml-10px inline dark-img-none"
+                />
+                <img
+                    src="../../assets/img/attach-file-white.svg"
+                    class="ml-10px inline dark-img hidden"
                 />
             </label>
         </div>

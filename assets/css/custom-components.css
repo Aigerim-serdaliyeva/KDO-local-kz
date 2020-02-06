@@ -3,7 +3,7 @@
 }
 
 .section {
-  @apply pt-170px pb-100px
+  @apply pt-140px pb-80px
 }
 
 .main-menu-link {
@@ -23,7 +23,7 @@
  }
 
  .button-brief {
-   @apply uppercase border border-solid border-input-color bg-white text-dark-gray text-14px py-15px px-25px text-777777
+   @apply uppercase border border-solid border-input-color bg-transparent text-#5D5D5D text-14px text-777777 py-12px px-20px
  }
 
  .button-clear {
@@ -35,15 +35,15 @@
 }
 
 .label-border {
-  @apply w-full border border-solid border-input-color bg-white text-dark-gray text-14px py-12px px-14px flex items-center text-gray-text
+  @apply w-full border border-solid border-input-color bg-transparent text-#5D5D5D flex items-center text-gray-text text-14px py-10px px-10px
 }
 
 .label {
-  @apply w-full text-dark-gray text-14px flex items-center text-gray-text
+  @apply w-full text-#5D5D5D text-14px flex items-center text-gray-text
 }
 
 .checkbox {
-  @apply relative mr-7px border border-solid border-input-color bg-white text-dark-gray w-15px h-15px
+  @apply relative mr-7px border border-solid border-input-color bg-transparent text-#5D5D5D w-15px h-15px
 }
 
 .checkbox-block {
@@ -51,19 +51,19 @@
 }
 
 .checkbox-inline-block {
-  @apply mr-15px mb-15px
+  @apply mr-10px mb-10px
 }
 
 .attach {
-  @apply flex items-center max-w-160px w-full cursor-pointer text-gray-text text-18px border border-solid border-input-color bg-white p-15px ml-10px
+  @apply flex items-center max-w-160px w-full cursor-pointer text-gray-text text-18px border border-solid border-input-color bg-transparent p-15px ml-10px
 }
 
 .input {
-  @apply w-full border border-solid border-input-color bg-white text-dark-gray text-14px py-6px px-10px
+  @apply w-full bg-transparent border border-solid border-input-color text-#5D5D5D text-14px py-5px px-10px
 }
 
 .input-title {
-  @apply w-full text-dark-gray font-semibold text-18px pl-10px mb-5px
+  @apply w-full text-#5D5D5D font-semibold text-16px pl-10px mb-3px
 }
 
 .input-div {
@@ -102,9 +102,6 @@
   .button-change {
     @apply w-28px
   }
-  .input {
-    @apply text-18px
-  }
 }
 
 @screen lg {
@@ -119,11 +116,29 @@
 }
 
 @screen 2xl {
+  .input {
+    @apply py-6px px-10px
+  }
+  .input-title {
+    @apply text-18px mb-5px
+  }
   .main-menu-link {
       @apply text-18px
   }
   .button {
     @apply text-18px
+  }
+  .label-border {
+    @apply py-12px px-14px
+  }
+  .button-brief {
+    @apply py-15px px-25px
+  }
+  .checkbox-inline-block {
+    @apply mr-15px mb-15px
+  }
+  .section {
+    @apply pt-170px pb-100px
   }
 }
 

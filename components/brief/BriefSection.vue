@@ -3,6 +3,8 @@
         <ClearForm />
         <ValidationObserver ref="form">
             <form @submit.prevent="handleSubmit()">
+                <BriefTitle />
+
                 <BriefContactData />
 
                 <BriefCommonInfornation />
@@ -15,8 +17,10 @@
 
                 <BriefFilesExamples />
 
-                <div class="max-w-1170px w-full mx-auto text-right">
-                    <button type="submit" class="button-brief">
+                <div
+                    class="w-full mx-auto text-right max-w-960px 2xl:max-w-1000px 3xl:max-w-1170px"
+                >
+                    <button type="submit" class="button-brief dark-color">
                         Завершить и отправить
                     </button>
                 </div>
@@ -29,6 +33,7 @@
 import { ValidationObserver } from 'vee-validate';
 import { mapMutations } from 'vuex';
 import ClearForm from '../form/ClearForm.vue';
+import BriefTitle from './BriefTitle.vue';
 import BriefComplexTasks from './BriefComplexTasks.vue';
 import BriefFilesExamples from './BriefFilesExamples.vue';
 import BriefDesignMaterials from './BriefDesignMaterials.vue';
@@ -44,7 +49,8 @@ export default {
         BriefDesignMaterials,
         BriefFilesExamples,
         BriefComplexTasks,
-        ClearForm
+        ClearForm,
+        BriefTitle
     },
     methods: {
         handleSubmit() {

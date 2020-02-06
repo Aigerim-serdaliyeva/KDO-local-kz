@@ -1,6 +1,6 @@
 <template>
     <div>
-        <BriefTitle brief-title="Файлы и примеры" />
+        <BriefBlockTitle brief-block-title="Файлы и примеры" />
         <BriefBlock>
             <CustomInput
                 class="w-full"
@@ -34,9 +34,9 @@
 import ToAttach from '../form/ToAttach.vue';
 import CustomInput from '../form/CustomInput.vue';
 import BriefBlock from './BriefBlock.vue';
-import BriefTitle from './BriefTitle.vue';
+import BriefBlockTitle from './BriefBlockTitle.vue';
 export default {
-    components: { BriefTitle, BriefBlock, CustomInput, ToAttach },
+    components: { BriefBlockTitle, BriefBlock, CustomInput, ToAttach },
     data() {
         return {
             additionalServices: require('../../assets/json/additional-services.json')

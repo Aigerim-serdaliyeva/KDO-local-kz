@@ -1,42 +1,16 @@
 <template>
-    <div class="container">
+    <div class="mb-40px">
         <h2
-            class="brief__title relative text-center font-extrabold text-32px 2xl:text-36px uppercase"
+            class="font-bold text-24px text-center mb-5px text-#4F4F4F dark-color"
         >
-            <span class="px-15px">{{ briefTitle }}</span>
-            <div
-                class="brief__title__before absolute w-full mx-auto max-w-1000px 2xl:max-w-1070px 3xl:max-w-1250px border border-solid border-gray-colorful"
-            ></div>
+            Бриф на разработку
         </h2>
+        <div class="text-center">
+            <nuxt-link
+                to="/brief"
+                class="text-18px border-b border-solid border-input-color dark-blue-color dark-blue-border-bottom"
+                >веб-сайта</nuxt-link
+            >
+        </div>
     </div>
 </template>
-
-<script>
-export default {
-    props: {
-        briefTitle: {
-            type: String
-        }
-    },
-    data() {
-        return {};
-    }
-};
-</script>
-
-<style lang="scss" scoped>
-.brief__title {
-    color: #cae0ef;
-    z-index: 0;
-    span {
-        background: #fff;
-        z-index: 1;
-    }
-    &__before {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%);
-        z-index: -1;
-    }
-}
-</style>

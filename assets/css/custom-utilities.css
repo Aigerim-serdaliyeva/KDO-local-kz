@@ -22,4 +22,48 @@
   }
 }
 
+.center-absolute {
+  top: 50%;
+  transform: translateY(-50%);
+}
 
+
+.dark .dark-header {
+  background: #1F2123 !important;
+}
+
+.dark .dark-menu-link {
+  color: #E8E8E8;
+}
+
+.dark .dark-img {
+  display: block;
+}
+
+.dark .dark-img-none {
+  display: none;
+}
+
+.dark .dark-bg {
+  background-color: #1E1E1E !important;
+}
+
+.dark .dark-color {
+  color: #E8E8E8;
+}
+
+.dark .dark-blue-color {
+  color: #4D97C8;
+}
+
+.dark .dark-blue-border-bottom {
+  border-bottom: 1px solid #4D97C8;
+}
+
+.dark .dark-bg-white {
+  background-color: #fff !important;
+}
+
+.dark .dark-brief-header {
+  background-color: #272727;
+}

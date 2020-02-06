@@ -21,7 +21,7 @@
                 class="path-x"
             />
         </svg>
-        <div class="text-gray-text text-14px 2xl:text-16px mt-10px">
+        <div class="dark-color text-gray-text text-14px 2xl:text-16px mt-10px">
             Очистить форму
         </div>
     </div>

@@ -1,18 +1,28 @@
 <template>
     <div>
-        <div class="container header bg-header-back  fixed z-50">
+        <div class="container header dark-header bg-#F9FBFD fixed z-50">
             <div class="py-5px">
                 <nuxt-link
                     to="/"
                     class="text-center mx-auto block py-5px w-40px"
                 >
-                    <img src="@/assets/img/logo.svg" class="mx-auto" />
+                    <img src="@/assets/img/logo.svg" class="dark-img-none" />
+                    <img
+                        src="@/assets/img/logo-dark.svg"
+                        class="dark-img hidden"
+                    />
                 </nuxt-link>
                 <div class="absolute top-22px right-17px" @click="toggleMenu()">
                     <div class="burger" :class="{ checked: isChecked }">
-                        <div class="burger__inner burger__inner--1"></div>
-                        <div class="burger__inner burger__inner--2"></div>
-                        <div class="burger__inner burger__inner--3"></div>
+                        <div
+                            class="burger__inner dark-bg-white burger__inner--1"
+                        ></div>
+                        <div
+                            class="burger__inner dark-bg-white burger__inner--2"
+                        ></div>
+                        <div
+                            class="burger__inner dark-bg-white burger__inner--3"
+                        ></div>
                     </div>
                 </div>
             </div>
@@ -20,7 +30,7 @@
         </div>
 
         <div
-            class="header-mobile z-20 w-full h-auto fixed flex flex-col bg-center pt-70px"
+            class="header-mobile bg-light-bg dark-bg z-20 w-full h-auto fixed flex flex-col bg-center pt-70px"
             :class="{ active: mobileMenuState }"
         >
             <MainMenu @onSelectItem="closeMenu" />
@@ -56,7 +66,6 @@ export default {
 
 <style lang="scss" scoped>
 .header-mobile {
-    background-color: #fff;
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
     transform: translateY(-100%);
     transition: 0.4s all ease-in-out;
@@ -78,7 +87,7 @@ export default {
         position: absolute;
         width: 25px;
         height: 3px;
-        background: #4d97c8;
+        background-color: #4d97c8;
         border-radius: 6px;
         margin-bottom: 3px;
         transform: rotate(0deg);

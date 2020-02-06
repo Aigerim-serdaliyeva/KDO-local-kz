@@ -4,7 +4,7 @@
             <div
                 v-for="(service, index) in services"
                 :key="`service-${index}`"
-                class="text-center text-dark-gray mb-50px lg:mb-80px md:px-30px md:w-6/12 xl:w-4/12"
+                class="text-center text-#5D5D5D dark-color mb-50px lg:mb-80px md:px-30px md:w-6/12 xl:w-4/12"
             >
                 <img
                     :src="

@@ -1,20 +1,19 @@
 <template>
-    <div class="relative text-777777">
-        <HeaderMobile class="sm:hidden" />
-        <Header class="hidden sm:block" />
-        <nuxt />
-        <ModalWindow v-if="modalVisible && modalComponent">
-            <template v-slot:modal>
-                <component :is="modalComponent"></component>
-                <!-- <ModalClearForm v-if="modalWindow === clearForm" /> -->
-                <!-- <ModalClearForm /> -->
-                <!-- <ThanksForm v-if="modalWindow === thanksForm" /> -->
-            </template>
-        </ModalWindow>
+    <div :class="['text-777777', darkClass]">
+        <div class="min-h-screen bg-light-bg relative dark-bg">
+            <HeaderMobile class="sm:hidden" />
+            <Header class="hidden sm:block" />
+            <nuxt />
+            <ModalWindow v-if="modalVisible && modalComponent">
+                <template v-slot:modal>
+                    <component :is="modalComponent"></component>
+                </template>
+            </ModalWindow>
 
-        <div id="page-top-id"></div>
+            <div id="page-top-id"></div>
 
-        <PageTop />
+            <PageTop />
+        </div>
     </div>
 </template>
 
@@ -47,8 +46,12 @@ export default {
         ...mapState({
             modalVisible: ({ modal }) => modal.modalVisible,
             modalComponent: ({ modal }) => modal.modalComponent,
-            formTitle: ({ modal }) => modal.formTitle
-        })
+            formTitle: ({ modal }) => modal.formTitle,
+            isThemeDark: ({ theme }) => theme.isThemeDark
+        }),
+        darkClass() {
+            return { dark: this.isThemeDark };
+        }
     },
     mounted() {
         const scene = this.$scrollmagic

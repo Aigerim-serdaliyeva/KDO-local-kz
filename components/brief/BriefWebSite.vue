@@ -1,6 +1,9 @@
 <template>
     <div>
-        <BriefTitle id="brief-title-website" brief-title="ВЕБ-САЙТ" />
+        <BriefBlockTitle
+            id="brief-block-title-website"
+            brief-block-title="ВЕБ-САЙТ"
+        />
         <BriefBlock>
             <CustomInput
                 input-title="Предполагаемый тип сайта"
@@ -54,9 +57,9 @@
 <script>
 import CustomInput from '../form/CustomInput.vue';
 import BriefBlock from './BriefBlock.vue';
-import BriefTitle from './BriefTitle.vue';
+import BriefBlockTitle from './BriefBlockTitle.vue';
 export default {
-    components: { BriefTitle, BriefBlock, CustomInput },
+    components: { BriefBlockTitle, BriefBlock, CustomInput },
     data() {
         return {
             estimatedSites: require('../../assets/json/estimated-site.json'),

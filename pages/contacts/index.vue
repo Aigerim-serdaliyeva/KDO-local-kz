@@ -3,11 +3,18 @@
         <div class="max-w-1150px mx-auto">
             <ContactMap />
             <div
-                class="md:flex text-center p-30px border-b border-solid border-#CAE0EF md:text-left"
+                class="md:flex text-center p-30px border-b border-solid border-#CAE0EF dark-color md:text-left"
             >
                 <div class="w-4/12 hidden md:block">
-                    <nuxt-link to="/"
-                        ><img src="../../assets/img/logo-gray.svg" />
+                    <nuxt-link to="/">
+                        <img
+                            src="../../assets/img/logo-gray.svg"
+                            class="dark-img-none"
+                        />
+                        <img
+                            src="../../assets/img/logo-white.svg"
+                            class="dark-img hidden"
+                        />
                     </nuxt-link>
                 </div>
                 <div class=" md:w-4/12">

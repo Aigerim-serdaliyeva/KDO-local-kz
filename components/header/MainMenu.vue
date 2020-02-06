@@ -1,27 +1,33 @@
 <template>
     <ul class="md:flex md:justify-between w-full max-w-470px">
         <li class="text-center" @click="select">
-            <nuxt-link to="/blog" class="main-menu-link" active-class="active"
+            <nuxt-link
+                to="/blog"
+                class="dark-menu-link main-menu-link"
+                active-class="active"
                 >Блог</nuxt-link
             >
         </li>
         <li class="text-center" @click="select">
             <nuxt-link
                 to="/services"
-                class="main-menu-link"
+                class="dark-menu-link main-menu-link"
                 active-class="active"
                 >Услуги</nuxt-link
             >
         </li>
         <li class="text-center" @click="select">
-            <nuxt-link to="/client" class="main-menu-link" active-class="active"
+            <nuxt-link
+                to="/client"
+                class="dark-menu-link main-menu-link"
+                active-class="active"
                 >Клиенты</nuxt-link
             >
         </li>
         <li class="text-center" @click="select">
             <nuxt-link
                 to="/contacts"
-                class="main-menu-link"
+                class="dark-menu-link main-menu-link"
                 active-class="active"
                 >Контакты</nuxt-link
             >
@@ -45,7 +51,7 @@ ul {
         border-bottom: 3px solid transparent;
         &.active,
         &:hover {
-            border-bottom: 3px solid #4d97c8;
+            border-bottom: 3px solid #4d97c8 !important;
         }
     }
 }
@@ -56,12 +62,20 @@ ul {
 @media screen and (max-width: 768px) {
     ul {
         .main-menu-link {
-            border: none;
+            border: none !important;
             &.active,
             &:hover {
-                border: none;
-                // background-color: #f9fbfd;
+                border: none !important;
                 background: #f9fbfd;
+            }
+        }
+
+        .dark-menu-link {
+            border: none !important;
+            &.active,
+            &:hover {
+                border: none !important;
+                background: rgba(255, 255, 255, 0.1);
             }
         }
     }

@@ -1,6 +1,6 @@
 <template>
     <div
-        class="page-top hidden cursor-pointer fixed bottom-20px right-0 opacity-50"
+        class="page-top hidden cursor-pointer fixed bottom-0 lg:bottom-20px right-0 opacity-50"
     >
         <div @click="pageTop()">
             <svg

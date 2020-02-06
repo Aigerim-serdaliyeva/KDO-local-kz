@@ -1,6 +1,6 @@
 <template>
     <div>
-        <BriefTitle brief-title="Дизайн и материалы" />
+        <BriefBlockTitle brief-block-title="Дизайн и материалы" />
         <BriefBlock>
             <CustomInput
                 input-title="Настроение и ассоциации, которые должен вызывать
@@ -57,9 +57,9 @@
 <script>
 import CustomInput from '../form/CustomInput.vue';
 import BriefBlock from './BriefBlock.vue';
-import BriefTitle from './BriefTitle.vue';
+import BriefBlockTitle from './BriefBlockTitle.vue';
 export default {
-    components: { BriefTitle, BriefBlock, CustomInput },
+    components: { BriefBlockTitle, BriefBlock, CustomInput },
     data() {
         return {
             designMaterials: require('../../assets/json/design-materials.json'),

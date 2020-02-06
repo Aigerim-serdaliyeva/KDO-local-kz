@@ -1,6 +1,6 @@
 <template>
-    <div class="mb-25px">
-        <div class="input-title">
+    <div class="mb-15px 2xl:mb-25px">
+        <div class="input-title dark-color">
             {{ inputTitle
             }}<span class="text-color-red">{{ inputTitleSpan }}</span>
             <span class="font-light">{{ inputTitleBracket }}</span>
@@ -16,9 +16,8 @@
         >
             <input
                 v-model="message"
-                class="input"
+                class="input dark-color"
                 :type="inputType"
-                :vMask="vMask"
                 v-bind="inputOthersProps"
             />
             <span class="input-required">{{ errors[0] }}</span>
@@ -31,7 +30,7 @@
         >
             <textarea
                 v-model="message"
-                class="input"
+                class="input dark-color"
                 v-bind="textareaOtherProps"
                 rows="4"
             ></textarea>
@@ -74,18 +73,11 @@
 <script>
 import { ValidationProvider } from 'vee-validate';
 import { mapActions } from 'vuex';
-import { VueMaskDirective } from 'v-mask';
 export default {
     components: {
         ValidationProvider
     },
-    directives: {
-        mask: VueMaskDirective
-    },
     props: {
-        vMask: {
-            type: String
-        },
         isCheckboxBorder: {
             type: Boolean,
             default: true
@@ -147,7 +139,9 @@ export default {
             }
         },
         checkboxClass() {
-            return this.isCheckboxBorder ? 'label-border' : 'label';
+            return this.isCheckboxBorder
+                ? 'label-border dark-color'
+                : 'label dark-color';
         },
         divCheckbox() {
             return this.isBlockdivCheckbox
@@ -194,7 +188,7 @@ export default {
 
 .checkbox-inline-block {
     &:last-child {
-        // margin: 0;
+        margin: 0;
     }
 }
 </style>
