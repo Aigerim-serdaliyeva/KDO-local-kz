@@ -1,0 +1,31 @@
+[
+  {
+    "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "img": "blog-1",
+    "route": "blog-1",
+    "important": true
+  },
+  {
+    "title": "Muratov title",
+    "text": "Muratov text",
+    "img": "blog-2",
+    "route": "blog-2",
+    "important": false
+  },
+  {
+    "title": "ПРОЕКТ САЙТ ПРИЛОЖЕНИЕ",
+    "text": "pmg Проект сайт приложение",
+    "img": "blog-3",
+    "route": "blog-3",
+    "important": true
+  },
+  {
+    "title": "ПРОЕКТ САЙТ ПРИЛОЖЕНИЕ",
+    "text": "Проект сайт приложение",
+    "img": "blog-4",
+    "route": "blog-4",
+    "important": false
+  }
+]
+

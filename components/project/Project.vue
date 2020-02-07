@@ -1,9 +1,9 @@
 <template>
     <div>
-        <div class="max-w-1280px mx-auto relative">
+        <div class="max-w-1280px mx-auto px-15px relative xl:px-0">
             <nuxt-link
                 to="/"
-                class="dark-color center-absolute flex items-center text-18px underline absolute"
+                class="dark-color center-absolute flex items-center underline block mt-15px mb-10px text-14px lg:my-0 lg:text-16px lg:absolute"
             >
                 <img
                     src="../../assets/img/arrow-left.png"
@@ -13,9 +13,11 @@
                     src="../../assets/img/arrow-left-white.png"
                     class="mr-5px dark-img hidden"
                 />
-                Вернуться к проектам</nuxt-link
+                Вернуться к проектам
+            </nuxt-link>
+            <h2
+                class="dark-color font-bold uppercase text-center leading-tight mb-10px text-36px lg:mb-20px lg:text-48px"
             >
-            <h2 class="dark-color font-bold uppercase text-center text-48px">
                 {{ getInfo.title }}
             </h2>
         </div>
@@ -28,7 +30,7 @@
                     class="mx-auto mb-20px"
                 />
             </div>
-            <p class="dark-color text-18px">
+            <p class="dark-color text-16px xl:text-18px">
                 {{ getInfo.text }}
             </p>
         </div>

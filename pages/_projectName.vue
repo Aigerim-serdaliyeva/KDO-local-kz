@@ -1,5 +1,5 @@
 <template>
-    <div class="pt-120px pb-70px">
+    <div class="pt-80px pb-30px md:pb-70px md:pt-120px">
         <Project />
 
         <OtherProjects />

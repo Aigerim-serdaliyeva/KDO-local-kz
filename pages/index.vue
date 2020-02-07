@@ -1,5 +1,5 @@
 <template>
-    <div class="pt-120px px-20px pb-30px">
+    <div class="pt-60px sm:pb-30px sm:pt-120px sm:px-20px">
         <ProjectBlock />
     </div>
 </template>

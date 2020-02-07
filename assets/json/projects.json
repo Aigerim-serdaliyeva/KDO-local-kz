@@ -3,31 +3,29 @@
     "title": "ПРОЕКТ САЙТ ПРИЛОЖЕНИЕ",
     "text": "Проект сайт приложение",
     "img": "project-1",
-    "router": "muratov"
+    "route": "top-security",
+    "bigImg": false
   },
   {
     "title": "ПРОЕКТ САЙТ ПРИЛОЖЕНИЕ",
     "text": "Проект сайт приложение",
-    "img": "project-1",
-    "router": "pmg"
+    "img": "project-2",
+    "route": "muratov",
+    "bigImg": true
   },
   {
     "title": "ПРОЕКТ САЙТ ПРИЛОЖЕНИЕ",
     "text": "Проект сайт приложение",
-    "img": "project-1",
-    "router": "muratov"
+    "img": "project-3",
+    "route": "pmg",
+    "bigImg": false
   },
   {
     "title": "ПРОЕКТ САЙТ ПРИЛОЖЕНИЕ",
     "text": "Проект сайт приложение",
-    "img": "project-1",
-    "router": "muratov"
-  },
-  {
-    "title": "ПРОЕКТ САЙТ ПРИЛОЖЕНИЕ",
-    "text": "Проект сайт приложение",
-    "img": "project-1",
-    "router": "muratov"
+    "img": "project-4",
+    "route": "KDO",
+    "bigImg": false
   }
 ]
 

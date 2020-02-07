@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="container header dark-header bg-#F9FBFD fixed z-50">
+        <div class="px-10px header w-full dark-header bg-#F9FBFD fixed z-50">
             <div class="py-5px">
                 <nuxt-link
                     to="/"

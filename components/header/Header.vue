@@ -9,7 +9,7 @@
                         class="dark-img hidden"
                     />
                 </nuxt-link>
-                <MainMenu class="hidden sm:block ml-145px" />
+                <MainMenu class="hidden md:block ml-145px" />
                 <div class="flex-grow"></div>
                 <HeaderButton />
             </div>

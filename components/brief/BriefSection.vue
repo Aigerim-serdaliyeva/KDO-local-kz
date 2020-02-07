@@ -60,7 +60,6 @@ export default {
                 }
 
                 this.showModal('ThanksForm');
-                // alert('Form has been submitted!');
 
                 // Wait until the models are updated in the UI
                 this.$nextTick(() => {

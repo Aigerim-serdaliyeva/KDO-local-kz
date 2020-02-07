@@ -1,5 +1,5 @@
 <template>
-    <ul class="md:flex md:justify-between w-full max-w-470px">
+    <ul class="md:flex md:justify-between w-full md:max-w-470px">
         <li class="text-center" @click="select">
             <nuxt-link
                 to="/blog"

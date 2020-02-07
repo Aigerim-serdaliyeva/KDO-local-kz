@@ -3,13 +3,24 @@
         <div class="min-h-screen bg-light-bg relative dark-bg">
             <HeaderMobile class="md:hidden" />
             <Header class="hidden md:block" />
-            <nuxt />
-            <ModalWindow v-if="modalVisible && modalComponent">
-                <template v-slot:modal>
-                    <component :is="modalComponent"></component>
-                </template>
-            </ModalWindow>
+            <div>
+                <BlogsMobile />
+                <component :is="blogsComponent"></component>
+            </div>
+            <div class="container -px-15px pt-15px md:pt-120px">
+                <div class="max-w-1280px mx-auto flex flex-wrap">
+                    <div class="md:w-8/12 px-7px">
+                        <div v-if="isBlog">
+                            <nuxt />
+                        </div>
 
+                        <BlogsNew v-else />
+                    </div>
+                    <div class="md:w-4/12 px-7px">
+                        <BlogsPopular /> <BlogsImportant />
+                    </div>
+                </div>
+            </div>
             <div id="page-top-id"></div>
 
             <PageTop />
@@ -19,35 +30,28 @@
 
 <script>
 import { mapState } from 'vuex';
+import BlogsMobile from '../components/blog/BlogsMobile.vue';
+import BlogsImportant from '../components/blog/BlogsImportant.vue';
+import BlogsNew from '../components/blog/BlogsNew.vue';
+import BlogsPopular from '../components/blog/BlogsPopular.vue';
 import PageTop from '../components/PageTop.vue';
-import ModalClearForm from '../components/form/ModalClearForm.vue';
-import ThanksForm from '../components/form/ThanksForm.vue';
-import ModalWindow from '../components/modal/ModalWindow.vue';
 import HeaderMobile from '../components/header/HeaderMobile.vue';
 import Header from '../components/header/Header.vue';
 export default {
     components: {
         Header,
         HeaderMobile,
-        ModalWindow,
-        ModalClearForm,
         PageTop,
-        ThanksForm
-    },
-    props: {
-        modalWindow: {
-            type: Boolean
-        }
-    },
-    data() {
-        return {};
+        BlogsNew,
+        BlogsPopular,
+        BlogsImportant,
+        BlogsMobile
     },
     computed: {
         ...mapState({
-            modalVisible: ({ modal }) => modal.modalVisible,
-            modalComponent: ({ modal }) => modal.modalComponent,
-            formTitle: ({ modal }) => modal.formTitle,
-            isThemeDark: ({ theme }) => theme.isThemeDark
+            isThemeDark: ({ theme }) => theme.isThemeDark,
+            isBlog: ({ blog }) => blog.isBlog,
+            blogsComponent: ({ blog }) => blog.blogsComponent
         }),
         darkClass() {
             return { dark: this.isThemeDark };

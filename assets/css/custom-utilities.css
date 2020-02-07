@@ -27,7 +27,6 @@
   transform: translateY(-50%);
 }
 
-
 .dark .dark-header {
   background: #1F2123 !important;
 }
@@ -66,4 +65,8 @@
 
 .dark .dark-brief-header {
   background-color: #272727;
+}
+
+.dark .dark-blog-menu {
+  background-color: #262626;
 }

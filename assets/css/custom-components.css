@@ -74,6 +74,18 @@
   @apply text-12px block text-red-500 pl-10px
 }
 
+.blog-title {
+  @apply font-bold leading-none text-24px mb-15px
+}
+
+.blog-block {
+  @apply border-t border-b border-solid border-#E4E4E4 py-10px text-13px
+}
+
+.blog-menu {
+  @apply p-16px w-4/12 bg-blue-back text-white text-14px text-center
+}
+
 .section-right {
   @apply relative w-full w-screen text-center -mx-15px
 }
@@ -101,6 +113,12 @@
   }
   .button-change {
     @apply w-28px
+  }
+  .blog-title {
+    @apply text-48px mb-20px
+  }
+  .blog-block {
+    @apply py-15px text-18px
   }
 }
 

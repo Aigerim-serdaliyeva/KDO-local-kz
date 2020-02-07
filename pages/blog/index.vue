@@ -4,6 +4,7 @@
 
 <script>
 export default {
-    components: {}
+    components: {},
+    layout: 'blogs'
 };
 </script>
