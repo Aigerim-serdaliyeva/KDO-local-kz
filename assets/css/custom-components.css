@@ -115,10 +115,10 @@
     @apply w-28px
   }
   .blog-title {
-    @apply text-48px mb-20px
+    @apply text-36px mb-20px
   }
   .blog-block {
-    @apply py-15px text-18px
+    @apply py-10px text-16px
   }
 }
 
@@ -157,6 +157,9 @@
   }
   .section {
     @apply pt-170px pb-100px
+  }
+  .blog-block {
+    @apply py-15px text-18px
   }
 }
 

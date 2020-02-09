@@ -4,7 +4,7 @@
             <div
                 v-for="blog in blogs"
                 :key="blog.route"
-                class="mb-20px md:mb-0"
+                class="cursor-pointer mb-20px md:mb-0"
                 @click="goTo(blog)"
             >
                 <div v-if="blog.important">

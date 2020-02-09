@@ -4,7 +4,7 @@
             <HeaderMobile class="md:hidden" />
             <Header class="hidden md:block" />
             <div>
-                <BlogsMobile />
+                <BlogsMobile class="sm:hidden" />
                 <component :is="blogsComponent"></component>
             </div>
             <div class="container -px-15px pt-15px md:pt-120px">

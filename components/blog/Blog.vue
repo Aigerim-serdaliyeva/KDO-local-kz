@@ -28,7 +28,7 @@
                     {{ text }}
                 </div>
                 <div
-                    class="dark-color text-right text-13px md:text-18px md:mb-20px"
+                    class="dark-color text-right text-13px md:text-16px 2xl:text-18px md:mb-20px"
                 >
                     12 января, 2020 · 30 просмотров
                 </div>
