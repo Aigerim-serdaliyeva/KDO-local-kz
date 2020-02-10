@@ -45,14 +45,12 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-ul {
-    .main-menu-link {
-        border-bottom: 3px solid transparent;
-        &.active,
-        &:hover {
-            border-bottom: 3px solid #4d97c8 !important;
-        }
+<style lang="scss">
+.main-menu-link {
+    border-bottom: 3px solid transparent;
+    &.active,
+    &:hover {
+        border-bottom: 3px solid #4d97c8 !important;
     }
 }
 
@@ -60,23 +58,12 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
-    ul {
-        .main-menu-link {
+    .main-menu-link {
+        border: none !important;
+        &.active,
+        &:hover {
             border: none !important;
-            &.active,
-            &:hover {
-                border: none !important;
-                background: #f9fbfd;
-            }
-        }
-
-        .dark-menu-link {
-            border: none !important;
-            &.active,
-            &:hover {
-                border: none !important;
-                background: rgba(255, 255, 255, 0.1);
-            }
+            background: #f9fbfd;
         }
     }
 }

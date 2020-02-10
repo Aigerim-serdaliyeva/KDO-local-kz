@@ -36,7 +36,17 @@
 
 .dark .dark-menu-link {
   color: #E8E8E8;
+  border: none !important;
 }
+
+@media (max-width: 768px) {
+    .dark .dark-menu-link.active,
+    .dark .dark-menu-link:hover {
+        border: none !important;
+        background: rgba(255, 255, 255, 0.1);
+    }
+}
+
 
 .dark .dark-img {
   display: block;

@@ -1,6 +1,6 @@
 export const state = () => ({
     isBlog: false,
-    blogsComponent: null
+    blogsComponent: 'BlogsNew'
 });
 
 export const mutations = {
