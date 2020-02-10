@@ -3,20 +3,27 @@
         <div class="min-h-screen bg-light-bg relative dark-bg">
             <HeaderMobile class="md:hidden" />
             <Header class="hidden md:block" />
-            <div>
-                <BlogsMobile class="sm:hidden" />
-                <component :is="blogsComponent"></component>
-            </div>
-            <div class="container -px-15px pt-15px md:pt-120px">
-                <div class="max-w-1280px mx-auto flex flex-wrap">
-                    <div class="md:w-8/12 px-7px">
-                        <div v-if="isBlog">
+
+            <div class="sm:px-15px md:pt-120px">
+                <div
+                    class="mx-auto flex flex-wrap max-w-1140px 2xl:max-w-1280px "
+                >
+                    <div class="w-full md:w-8/12 md:px-7px">
+                        <div v-if="isBlog" class="px-15px md:px-0">
                             <nuxt />
                         </div>
 
-                        <BlogsNew v-else />
+                        <div v-else-if="theScreen767" class="md:hidden">
+                            <BlogsMobile />
+                            <component
+                                :is="blogsComponent"
+                                class="px-15px"
+                            ></component>
+                        </div>
+
+                        <BlogsNew v-else class="hidden md:block" />
                     </div>
-                    <div class="md:w-4/12 px-7px">
+                    <div class="md:w-4/12 px-7px hidden md:block">
                         <BlogsPopular /> <BlogsImportant />
                     </div>
                 </div>
@@ -46,6 +53,11 @@ export default {
         BlogsPopular,
         BlogsImportant,
         BlogsMobile
+    },
+    data() {
+        return {
+            theScreen767: window.matchMedia('(max-width: 767px)').matches
+        };
     },
     computed: {
         ...mapState({

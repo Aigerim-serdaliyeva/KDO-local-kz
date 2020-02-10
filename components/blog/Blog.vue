@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="pt-70px md:pt-0">
         <div
             class="cursor-pointer dark-color flex items-center underline text-14px lg:text-18px"
             @click="goBackBlogs()"
