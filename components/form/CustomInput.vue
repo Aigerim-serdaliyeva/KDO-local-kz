@@ -1,8 +1,8 @@
 <template>
     <div class="mb-15px 2xl:mb-25px">
         <div class="input-title dark-color">
-            {{ inputTitle
-            }}<span class="text-color-red">{{ inputTitleSpan }}</span>
+            {{ inputTitle }}
+            <span class="text-color-red">{{ inputTitleSpan }}</span>
             <span class="font-light">{{ inputTitleBracket }}</span>
             <span class="text-14px italic font-normal ml-15px">
                 {{ inputTitleClarify }}

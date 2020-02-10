@@ -7,7 +7,9 @@
                 </h3>
                 <img src="../../assets/img/blog/blog-1.jpg" class="mb-20px" />
                 <div class="blog-block">
-                    <p class="dark-color text-justify mb-10px">
+                    <p
+                        class="dark-color text-justify mb-10px overflow-hidden max-h-80px"
+                    >
                         {{ blog.text }}
                     </p>
                     <div class="dark-color flex items-center justify-between">

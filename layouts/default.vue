@@ -1,6 +1,6 @@
 <template>
     <div :class="['text-777777', darkClass]">
-        <div class="min-h-screen bg-light-bg relative dark-bg">
+        <div class="min-h-screen relative bg-light-bg dark-bg">
             <HeaderMobile class="md:hidden" />
             <Header class="hidden md:block" />
             <nuxt />
