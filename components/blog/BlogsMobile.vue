@@ -40,18 +40,11 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .blog-menu {
     &.active,
     &:hover {
-        background: #2c78aa !important;
-    }
-}
-
-.dark-blog-menu {
-    &.active,
-    &:hover {
-        background: #000000;
+        background: #2c78aa;
     }
 }
 </style>

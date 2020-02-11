@@ -83,3 +83,8 @@
 .dark .dark-blog-menu {
   background-color: #262626;
 }
+
+.dark .dark-blog-menu.active,
+.dark .dark-blog-menu:hover {
+  background: #000000;
+}

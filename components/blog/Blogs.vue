@@ -1,6 +1,8 @@
 <template>
     <div class="mb-20px">
-        <p class="dark-color hidden md:block font-normal mb-15px text-18px">
+        <p
+            class="dark-color hidden md:block font-normal mb-8px text-16px 2xl:mb-15px 2xl:text-18px"
+        >
             {{ blogsTitle }}
         </p>
         <div
