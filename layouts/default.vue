@@ -12,14 +12,14 @@
 
             <div id="page-top-id"></div>
 
-            <PageTop />
+            <ThePageTop />
         </div>
     </div>
 </template>
 
 <script>
 import { mapState } from 'vuex';
-import PageTop from '../components/PageTop.vue';
+import ThePageTop from '../components/ThePageTop.vue';
 import ModalClearForm from '../components/form/ModalClearForm.vue';
 import ThanksForm from '../components/form/ThanksForm.vue';
 import ModalWindow from '../components/modal/ModalWindow.vue';
@@ -31,7 +31,7 @@ export default {
         HeaderMobile,
         ModalWindow,
         ModalClearForm,
-        PageTop,
+        ThePageTop,
         ThanksForm
     },
     props: {

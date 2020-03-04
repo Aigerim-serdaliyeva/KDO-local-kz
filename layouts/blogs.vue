@@ -31,7 +31,7 @@
             </div>
             <div id="page-top-id"></div>
 
-            <PageTop />
+            <ThePageTop />
         </div>
     </div>
 </template>
@@ -42,14 +42,14 @@ import BlogsMobile from '../components/blog/BlogsMobile.vue';
 import BlogsImportant from '../components/blog/BlogsImportant.vue';
 import BlogsNew from '../components/blog/BlogsNew.vue';
 import BlogsPopular from '../components/blog/BlogsPopular.vue';
-import PageTop from '../components/PageTop.vue';
+import ThePageTop from '../components/ThePageTop.vue';
 import HeaderMobile from '../components/header/HeaderMobile.vue';
 import Header from '../components/header/Header.vue';
 export default {
     components: {
         Header,
         HeaderMobile,
-        PageTop,
+        ThePageTop,
         BlogsNew,
         BlogsPopular,
         BlogsImportant,

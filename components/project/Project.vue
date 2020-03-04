@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="max-w-1280px mx-auto px-15px relative xl:px-0">
-            <BackTo
+            <TheBackTo
                 back-to="Вернуться к проектам"
                 class="lg:absolute center-absolute"
             />
@@ -28,9 +28,9 @@
 </template>
 
 <script>
-import BackTo from '../BackTo.vue';
+import TheBackTo from '../TheBackTo.vue';
 export default {
-    components: { BackTo },
+    components: { TheBackTo },
     data() {
         return {
             projects: require('@/assets/json/projects.json'),
