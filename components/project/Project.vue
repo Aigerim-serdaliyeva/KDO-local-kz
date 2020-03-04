@@ -1,20 +1,10 @@
 <template>
     <div>
         <div class="max-w-1280px mx-auto px-15px relative xl:px-0">
-            <nuxt-link
-                to="/"
-                class="dark-color center-absolute flex items-center underline block mt-15px mb-10px text-14px lg:my-0 lg:text-16px lg:absolute"
-            >
-                <img
-                    src="../../assets/img/arrow-left.png"
-                    class="mr-5px dark-img-none"
-                />
-                <img
-                    src="../../assets/img/arrow-left-white.png"
-                    class="mr-5px dark-img hidden"
-                />
-                Вернуться к проектам
-            </nuxt-link>
+            <BackTo
+                back-to="Вернуться к проектам"
+                class="lg:absolute center-absolute"
+            />
             <h2
                 class="dark-color font-bold uppercase text-center leading-tight mb-10px text-36px lg:mb-20px lg:text-48px"
             >
@@ -38,7 +28,9 @@
 </template>
 
 <script>
+import BackTo from '../BackTo.vue';
 export default {
+    components: { BackTo },
     data() {
         return {
             projects: require('@/assets/json/projects.json'),

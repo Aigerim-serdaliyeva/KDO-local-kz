@@ -111,16 +111,20 @@ export default {
             default: ''
         },
         inputTitle: {
-            type: String
+            type: String,
+            default: ''
         },
         inputTitleSpan: {
-            type: String
+            type: String,
+            default: ''
         },
         inputTitleBracket: {
-            type: String
+            type: String,
+            default: ''
         },
         inputTitleClarify: {
-            type: String
+            type: String,
+            default: ''
         },
         checkboxList: {
             type: Array,

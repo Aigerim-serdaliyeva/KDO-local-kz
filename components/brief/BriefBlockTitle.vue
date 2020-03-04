@@ -17,7 +17,8 @@
 export default {
     props: {
         briefBlockTitle: {
-            type: String
+            type: String,
+            default: ''
         }
     },
     data() {

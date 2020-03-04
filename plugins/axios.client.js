@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const secretKey = '';
+// const secretKey = '';
 
 axios.defaults.baseURL =
     process.env.NODE_ENV !== 'production'

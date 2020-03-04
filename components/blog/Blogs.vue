@@ -17,7 +17,8 @@
 export default {
     props: {
         blogsTitle: {
-            type: String
+            type: String,
+            default: ''
         }
     }
 };

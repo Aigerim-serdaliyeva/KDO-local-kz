@@ -21,9 +21,18 @@
 <script>
 export default {
     props: {
-        title: String,
-        text: String,
-        textMin: String
+        title: {
+            type: String,
+            default: ''
+        },
+        text: {
+            type: String,
+            default: ''
+        },
+        textMin: {
+            type: String,
+            default: ''
+        }
     }
 };
 </script>

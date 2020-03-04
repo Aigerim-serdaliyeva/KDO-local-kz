@@ -24,7 +24,8 @@
                         <BlogsNew v-else class="hidden md:block" />
                     </div>
                     <div class="md:w-4/12 px-7px hidden md:block">
-                        <BlogsPopular /> <BlogsImportant />
+                        <BlogsPopular />
+                        <BlogsImportant />
                     </div>
                 </div>
             </div>
